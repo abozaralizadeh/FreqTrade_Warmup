@@ -1,0 +1,143 @@
+2022-03-06 19:04:38,970 - freqtrade.configuration.configuration - INFO - Using config: user_data/config.json ...
+2022-03-06 19:04:38,973 - freqtrade.loggers - INFO - Verbosity set to 0
+2022-03-06 19:04:38,973 - freqtrade.configuration.configuration - INFO - Parameter -i/--timeframe detected ... Using timeframe: 1m ...
+2022-03-06 19:04:38,973 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2022-03-06 19:04:38,973 - freqtrade.configuration.configuration - INFO - Parameter --stake-amount detected, overriding stake_amount to: 10.0 ...
+2022-03-06 19:04:39,291 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2022-03-06 19:04:39,291 - freqtrade.configuration.configuration - INFO - Using data directory: user_data/data/kucoin ...
+2022-03-06 19:04:39,291 - freqtrade.configuration.configuration - INFO - Overriding timeframe with Command line argument
+2022-03-06 19:04:39,291 - freqtrade.configuration.configuration - INFO - Parameter --export detected: trades ...
+2022-03-06 19:04:39,291 - freqtrade.configuration.configuration - INFO - Parameter --cache=day detected ...
+2022-03-06 19:04:39,291 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2022-03-06 19:04:39,295 - freqtrade.configuration.check_exchange - WARNING - Exchange "kucoin" is known to the the ccxt library, available for the bot, but not officially supported by the Freqtrade development team. It may work flawlessly (please report back) or have serious issues. Use it at your own discretion.
+2022-03-06 19:04:39,295 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2022-03-06 19:04:39,295 - freqtrade.configuration.deprecated_settings - WARNING - DEPRECATED: The `ask_strategy.use_sell_signal` setting is deprecated and will be removed in the next versions of Freqtrade. Please use the `use_sell_signal` setting in your configuration instead.
+2022-03-06 19:04:39,295 - freqtrade.configuration.deprecated_settings - WARNING - DEPRECATED: The `ask_strategy.sell_profit_only` setting is deprecated and will be removed in the next versions of Freqtrade. Please use the `sell_profit_only` setting in your configuration instead.
+2022-03-06 19:04:39,295 - freqtrade.configuration.deprecated_settings - WARNING - DEPRECATED: The `ask_strategy.ignore_roi_if_buy_signal` setting is deprecated and will be removed in the next versions of Freqtrade. Please use the `ignore_roi_if_buy_signal` setting in your configuration instead.
+2022-03-06 19:04:39,295 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2022-03-06 19:04:39,297 - freqtrade.commands.optimize_commands - INFO - Starting freqtrade in Backtesting mode
+2022-03-06 19:04:39,297 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2022-03-06 19:04:39,297 - freqtrade.exchange.exchange - INFO - Using CCXT 1.74.63
+2022-03-06 19:04:39,297 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2022-03-06 19:04:39,299 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2022-03-06 19:04:39,301 - freqtrade.exchange.exchange - INFO - Using Exchange "KuCoin"
+2022-03-06 19:04:42,887 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Kucoin'...
+2022-03-06 19:04:42,961 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy EMAPriceCrossoverWithThreshold from '/freqtrade/user_data/strategies/EMAPriceCrossoverWithThreshold.py'...
+2022-03-06 19:04:42,962 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2022-03-06 19:04:42,962 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2022-03-06 19:04:42,962 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2022-03-06 19:04:42,962 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2022-03-06 19:04:42,962 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 1m.
+2022-03-06 19:04:42,962 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2022-03-06 19:04:42,962 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 10.0.
+2022-03-06 19:04:42,962 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'use_sell_signal' with value in config file: True.
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: False.
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ignore_roi_if_buy_signal' with value in config file: False.
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'40': 0.0, '30': 0.01, '20': 0.02, '0': 0.04}
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 1m
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.15
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 10.0
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2022-03-06 19:04:42,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+Result for strategy EMAPriceCrossoverWithThreshold
+=========================================================== BACKTESTING REPORT ==========================================================
+|       Pair |   Buys |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|------------+--------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|   PYR/USDT |     49 |           0.10 |           4.68 |             0.469 |           0.47 |        0:43:00 |    25     8    16  51.0 |
+|   ANC/USDT |     61 |           0.06 |           3.83 |             0.384 |           0.38 |        0:57:00 |    31    12    18  50.8 |
+|  LINK/USDT |     50 |          -0.21 |         -10.32 |            -1.034 |          -1.03 |        1:05:00 |    15    22    13  30.0 |
+|   WMT/USDT |     25 |          -0.41 |         -10.34 |            -1.036 |          -1.04 |        2:24:00 |     7    10     8  28.0 |
+|  MANA/USDT |     74 |          -0.17 |         -12.76 |            -1.278 |          -1.28 |        0:46:00 |    30    18    26  40.5 |
+|   EOS/USDT |     50 |          -0.27 |         -13.73 |            -1.376 |          -1.38 |        1:27:00 |    15    22    13  30.0 |
+|   ETH/USDT |     45 |          -0.31 |         -14.05 |            -1.408 |          -1.41 |        1:36:00 |    15    16    14  33.3 |
+|  ALGO/USDT |     78 |          -0.21 |         -16.30 |            -1.633 |          -1.63 |        1:00:00 |    24    33    21  30.8 |
+|   XTZ/USDT |     66 |          -0.25 |         -16.56 |            -1.660 |          -1.66 |        0:57:00 |    26    17    23  39.4 |
+|   SOL/USDT |     70 |          -0.24 |         -16.65 |            -1.668 |          -1.67 |        0:48:00 |    29    21    20  41.4 |
+|  SAND/USDT |     56 |          -0.30 |         -16.96 |            -1.699 |          -1.70 |        0:53:00 |    21    15    20  37.5 |
+|   ENJ/USDT |     59 |          -0.29 |         -17.00 |            -1.704 |          -1.70 |        0:43:00 |    22    15    22  37.3 |
+|   TRX/USDT |     47 |          -0.39 |         -18.42 |            -1.845 |          -1.85 |        2:13:00 |     9    25    13  19.1 |
+|  LUNA/USDT |     86 |          -0.22 |         -19.30 |            -1.934 |          -1.93 |        0:50:00 |    35    27    24  40.7 |
+|  IOTA/USDT |     61 |          -0.32 |         -19.69 |            -1.973 |          -1.97 |        1:01:00 |    23    18    20  37.7 |
+|   XRP/USDT |     66 |          -0.31 |         -20.17 |            -2.021 |          -2.02 |        1:08:00 |    20    24    22  30.3 |
+|   DOT/USDT |     54 |          -0.39 |         -21.07 |            -2.112 |          -2.11 |        0:59:00 |    16    20    18  29.6 |
+|   BCH/USDT |     52 |          -0.41 |         -21.14 |            -2.118 |          -2.12 |        1:21:00 |    15    18    19  28.8 |
+|   NEO/USDT |     68 |          -0.32 |         -21.74 |            -2.179 |          -2.18 |        0:55:00 |    18    25    25  26.5 |
+|   BNB/USDT |     52 |          -0.42 |         -21.92 |            -2.196 |          -2.20 |        2:01:00 |    12    24    16  23.1 |
+|   LTC/USDT |     60 |          -0.44 |         -26.57 |            -2.662 |          -2.66 |        1:07:00 |    17    22    21  28.3 |
+|   XLM/USDT |     48 |          -0.57 |         -27.59 |            -2.765 |          -2.76 |        1:11:00 |     9    18    21  18.8 |
+|   ADA/USDT |     73 |          -0.38 |         -27.75 |            -2.781 |          -2.78 |        1:12:00 |    23    24    26  31.5 |
+|   BTC/USDT |     65 |          -0.44 |         -28.60 |            -2.866 |          -2.87 |        1:44:00 |    10    34    21  15.4 |
+|   ACE/USDT |    101 |          -0.29 |         -29.60 |            -2.966 |          -2.97 |        0:45:00 |    37    25    39  36.6 |
+|   XMR/USDT |     59 |          -0.54 |         -31.59 |            -3.166 |          -3.17 |        1:16:00 |    14    23    22  23.7 |
+| BOSON/USDT |     66 |          -0.52 |         -34.04 |            -3.410 |          -3.41 |        0:56:00 |    23    15    28  34.8 |
+|   AXS/USDT |     78 |          -0.53 |         -41.34 |            -4.142 |          -4.14 |        0:49:00 |    18    27    33  23.1 |
+|  ATOM/USDT |     95 |          -0.48 |         -46.00 |            -4.609 |          -4.61 |        0:47:00 |    32    22    41  33.7 |
+|   VRA/USDT |     88 |          -0.61 |         -53.89 |            -5.400 |          -5.40 |        0:32:00 |    27    13    48  30.7 |
+|   SLP/USDT |    111 |          -0.70 |         -77.90 |            -7.806 |          -7.81 |        0:29:00 |    31    12    68  27.9 |
+|      TOTAL |   2013 |          -0.36 |        -724.49 |           -72.594 |         -72.59 |        1:02:00 |   649   625   739  32.2 |
+========================================================== BUY TAG STATS ===========================================================
+|   TAG |   Buys |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-------+--------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+| TOTAL |   2013 |          -0.36 |        -724.49 |           -72.594 |         -72.59 |        1:02:00 |   649   625   739  32.2 |
+===================================================== SELL REASON STATS =====================================================
+|   Sell Reason |   Sells |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|           roi |    1274 |    649   625     0   100 |           0.4  |         507.14 |            50.816 |          50.71 |
+|   sell_signal |     737 |      0     0   737     0 |          -1.67 |       -1230.38 |          -123.284 |        -123.04 |
+|    force_sell |       2 |      0     0     2     0 |          -0.63 |          -1.25 |            -0.125 |          -0.13 |
+======================================================= LEFT OPEN TRADES REPORT =======================================================
+|     Pair |   Buys |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|----------+--------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+| VRA/USDT |      1 |          -0.35 |          -0.35 |            -0.035 |          -0.03 |        0:02:00 |     0     0     1     0 |
+| ADA/USDT |      1 |          -0.90 |          -0.90 |            -0.091 |          -0.09 |        0:19:00 |     0     0     1     0 |
+|    TOTAL |      2 |          -0.63 |          -1.25 |            -0.125 |          -0.13 |        0:10:00 |     0     0     2     0 |
+=============== SUMMARY METRICS ================
+| Metric                 | Value               |
+|------------------------+---------------------|
+| Backtesting from       | 2022-02-04 00:00:00 |
+| Backtesting to         | 2022-03-06 16:44:00 |
+| Max open trades        | 10                  |
+|                        |                     |
+| Total/Daily Avg Trades | 2013 / 67.1         |
+| Starting balance       | 100 USDT            |
+| Final balance          | 27.406 USDT         |
+| Absolute profit        | -72.594 USDT        |
+| Total profit %         | -72.59%             |
+| Trades per day         | 67.1                |
+| Avg. daily profit %    | -2.42%              |
+| Avg. stake amount      | 10 USDT             |
+| Total trade volume     | 20130 USDT          |
+|                        |                     |
+| Best Pair              | PYR/USDT 4.68%      |
+| Worst Pair             | SLP/USDT -77.90%    |
+| Best trade             | MANA/USDT 3.99%     |
+| Worst trade            | SLP/USDT -3.62%     |
+| Best day               | 1.033 USDT          |
+| Worst day              | -7.872 USDT         |
+| Days win/draw/lose     | 4 / 0 / 27          |
+| Avg. Duration Winners  | 0:38:00             |
+| Avg. Duration Loser    | 1:00:00             |
+| Rejected Buy signals   | 103                 |
+| Entry/Exit Timeouts    | 0 / 0               |
+|                        |                     |
+| Min balance            | 27.406 USDT         |
+| Max balance            | 101.339 USDT        |
+| Drawdown (Account)     | 72.96%              |
+| Drawdown               | 73.933 USDT         |
+| Drawdown high          | 1.339 USDT          |
+| Drawdown low           | -72.594 USDT        |
+| Drawdown Start         | 2022-02-05 13:37:00 |
+| Drawdown End           | 2022-03-06 16:44:00 |
+| Market change          | 5.84%               |
+================================================
+
+2022-03-06 19:05:00,678 - freqtrade.exchange.exchange - INFO - Closing async ccxt session.
