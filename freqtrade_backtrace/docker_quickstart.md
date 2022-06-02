@@ -229,3 +229,7 @@ then
 ```
 open user_data/plot/freqtrade-plot-ALGO_USDT-1m.html
 ```
+
+Optimize
+```
+dcr freqtrade_backtrace new-hyperopt --hyperopt BBRSIHyperopt
